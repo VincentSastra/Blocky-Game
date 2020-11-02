@@ -8,7 +8,7 @@
 
 ## Setup
 1. Download Unity 2019 LTS
-    * DO NOT DOWNLOAD ANY EXTRA MODULES
+    * __Do not download any extra module__
 2. [Download VSCode] (https://code.visualstudio.com/)
     * Download Unity and C# extensions
 3. [Download git] (https://git-scm.com/downloads)
