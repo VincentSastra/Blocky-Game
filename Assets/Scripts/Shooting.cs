@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
+    public float velocity = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,6 @@ public class Shooting : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2((Input.mousePosition.x - rb.position.x)/100f, (Input.mousePosition.y - rb.position.y)/100f);
+        rb.velocity = (new Vector2((2 * Input.mousePosition.x - Screen.width), (2 * Input.mousePosition.y - Screen.height))).normalized * velocity;
     }
 }
