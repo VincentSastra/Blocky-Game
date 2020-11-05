@@ -16,29 +16,32 @@ public class CharacterMovement : MonoBehaviour
     float maxVelocity = 6f;
     void FixedUpdate()
     {
-    rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxVelocity);
+        Vector2 direction = new Vector2(0, 0);
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            direction.y += 1;
+        }
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        {
+            direction.x += 1;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        {
+            direction.x += -1;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            direction.y += -1;
+        }
+        
+        rb.AddForce(direction * 1f);
+
+        rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxVelocity);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.W))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + accel);
-        }
-        if (Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
-        {
-            rb.velocity = new Vector2(rb.velocity.x - accel, rb.velocity.y);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
-            rb.velocity = new Vector2(rb.velocity.x + accel, rb.velocity.y);
-        }
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y - accel);
-        }
-        
 
     }
 }
