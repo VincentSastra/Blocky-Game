@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 640131863}
   - component: {fileID: 640131862}
   - component: {fileID: 640131861}
+  - component: {fileID: 640131864}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -314,6 +315,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 180, z: 180}
+--- !u!114 &640131864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640131860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b417ab9e546cc47a9b153f2c93856a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &725229905
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,3 +464,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawnPoint: {fileID: 725229908}
   bulletPrefab: {fileID: 6812801849557624699, guid: 07f6fc33e884df24a968f034974c06e9, type: 3}
+  velocity: 20
