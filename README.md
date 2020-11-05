@@ -9,11 +9,11 @@
 ## Setup
 1. Download Unity 2019 LTS
     * __Do not download any extra module__
-2. [Download VSCode] (https://code.visualstudio.com/)
+2. [Download VSCode](https://code.visualstudio.com/)
     * Download Unity and C# extensions
-3. [Download git] (https://git-scm.com/downloads)
+3. [Download git](https://git-scm.com/downloads)
     * This lets you use GitHub as version control
-4. [Download SourceTree] (https://www.sourcetreeapp.com/)
+4. [Download SourceTree](https://www.sourcetreeapp.com/)
     * This is a GUI for git so that its easier to use git
 5. Clone this repository
 
