@@ -12,23 +12,29 @@ public class CharacterMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(0f, 0f);
     }
+    
+    float maxVelocity = 6f;
+    void FixedUpdate()
+    {
+    rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxVelocity);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.W))
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + accel);
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow)|| Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
         {
             rb.velocity = new Vector2(rb.velocity.x - accel, rb.velocity.y);
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             rb.velocity = new Vector2(rb.velocity.x + accel, rb.velocity.y);
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y - accel);
         }
