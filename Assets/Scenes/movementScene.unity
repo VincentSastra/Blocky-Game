@@ -411,7 +411,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 725229910}
-  accel: 1
+  accel: 6
+  maxVelocity: 12
+  initialVelocity: 2
+  dash: 6
 --- !u!50 &725229910
 Rigidbody2D:
   serializedVersion: 4
@@ -425,7 +428,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.8
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
