@@ -19,7 +19,6 @@ public class Shooting : MonoBehaviour
          //Shooting
         if(Input.GetMouseButtonDown(0))
         {
-
             Shoot();
         }
     }
