@@ -43,15 +43,18 @@ public class AIMovement : MonoBehaviour
 
         // TODO: Factor in all the weights
         Vector3 direction = (new Vector3(directionVectors[0].x, directionVectors[0].y, 0)).normalized;
+
+        Vector3 normalDirection = Vector3.Cross(direction, Vector3.forward).normalized * 0.5f * ((Time.time % 6 > 2) ? 1 : -1);
+
+        direction = normalDirection * (1 - nearingTargetModifier) + direction * nearingTargetModifier;
         
-        // TODO: If nearing target, start circling around
         if (collision != null) {
             // Some linear algebra here
             // Basically make a plane normal to the surface and only move along the surface
-            rb.velocity = Vector3.ProjectOnPlane(direction, currentPosition - collision.transform.position).normalized * nearingTargetModifier * speed;
-        } else {
-            rb.velocity = direction * nearingTargetModifier * speed;
+            direction = Vector3.ProjectOnPlane(direction, currentPosition - collision.transform.position).normalized;
         }
+    
+        rb.velocity = direction * speed;
     }
 
     void OnCollisionEnter2D(Collision2D col) {
