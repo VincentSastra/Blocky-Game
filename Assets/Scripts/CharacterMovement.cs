@@ -10,14 +10,38 @@ public class CharacterMovement : MonoBehaviour
     public float initialVelocity = 2f;
     public float dash = 12f;
 
+    private float lastDash;
+
     // Start is called before the first frame update
     void Start()
     {
+        lastDash = -10;
         rb.velocity = new Vector2(0f, 0f);
     }
     
     void FixedUpdate()
     {
+        Vector2 direction = getDirection();
+        
+        if (rb.velocity.magnitude < maxVelocity) {
+            rb.AddForce(direction.normalized * accel);
+        }
+
+        if (rb.velocity.magnitude < 1f) {
+            rb.velocity = direction.normalized * initialVelocity;
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - lastDash > 0.5) {
+            lastDash = Time.time;
+            rb.velocity += getDirection().normalized * dash;
+        }
+    }
+
+    private Vector2 getDirection() {
         Vector2 direction = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
@@ -35,24 +59,7 @@ public class CharacterMovement : MonoBehaviour
         {
             direction.y += -1;
         }
-        
-        if (rb.velocity.magnitude < maxVelocity) {
-            rb.AddForce(direction.normalized * accel);
-        }
 
-        if (rb.velocity.magnitude < 1f) {
-            rb.velocity = direction.normalized * initialVelocity;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift)) {
-            rb.velocity += direction.normalized * dash;
-        }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        return direction;
     }
 }
