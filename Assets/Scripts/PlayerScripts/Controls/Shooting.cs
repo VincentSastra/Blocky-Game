@@ -8,8 +8,16 @@ public class Shooting : MonoBehaviour
     public Bullet bulletPrefab;
     public float velocity = 20f;
 
-    void OnMouseDown() {
-        Shoot();
+    // void OnMouseDown() {
+    //    Shoot();
+    //}
+       void Update()
+    {
+         //Shooting
+        if(Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
     }
 
     void Shoot()
