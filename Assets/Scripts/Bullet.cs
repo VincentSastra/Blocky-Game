@@ -1,21 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Bullet : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public float accel = 5f;
-    public float maxVelocity = 6f;
-    public float initialVelocity = 2f;
-    public float dash = 12f;
-
-    private float lastDash;
-
     // Start is called before the first frame update
     void Start()
     {
-        lastDash = -10;
-        rb.velocity = new Vector2(0f, 0f);
+        // This is the task of our coroutine, removing the bullet in 3 seconds
+        IEnumerator removerTask = ExecuteAfterTime(3, () => {
+            Destroy(gameObject);
+            });
+
+        StartCoroutine(removerTask);
+        
+    }
+
+        // A Task that is done after a timed delay
+    private IEnumerator ExecuteAfterTime(float time, Action task)
+    {
+        yield return new WaitForSeconds(time);
+        task();
+    }
+
+    // Happens on collision
+    void OnCollisionEnter(Collision Other)
+    {
+        // Destroy(gameObject);
     }
 }
+
