@@ -12,11 +12,14 @@ public class CharacterMovement : MonoBehaviour
 
     private float lastDash;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         lastDash = -10;
         rb.velocity = new Vector2(0f, 0f);
+        anim = GetComponent<Animator>();
     }
     
     void FixedUpdate()
@@ -29,6 +32,12 @@ public class CharacterMovement : MonoBehaviour
 
         if (rb.velocity.magnitude < 1f) {
             rb.velocity = direction.normalized * initialVelocity;
+        }
+
+        if (direction != Vector2.zero) {
+            anim.SetBool("isRunning", true);
+        } else {
+            anim.SetBool("isRunning", false);
         }
     }
 

@@ -28,7 +28,7 @@ public class Bullet : MonoBehaviour
     // Happens on collision
     void OnCollisionEnter(Collision Other)
     {
-        // Destroy(gameObject);
+        Destroy(gameObject);
     }
 }
 
