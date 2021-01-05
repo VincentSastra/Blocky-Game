@@ -5,16 +5,13 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public Transform bulletSpawnPoint;
-    public GameObject bulletPrefab;
+    public Bullet bulletPrefab;
     public float velocity = 20f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    // void OnMouseDown() {
+    //    Shoot();
+    //}
+       void Update()
     {
          //Shooting
         if(Input.GetMouseButtonDown(0))

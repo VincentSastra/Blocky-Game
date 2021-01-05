@@ -1,15 +1,17 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Bullet : MonoBehaviour
 {
+    public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        // This is the task of our coroutine, removing the spelldata in 5 seconds
-        IEnumerator removerTask = ExecuteAfterTime(5, () => {
+        // This is the task of our coroutine, removing the bullet in 3 seconds
+        IEnumerator removerTask = ExecuteAfterTime(3, () => {
             Destroy(gameObject);
             });
 
@@ -27,6 +29,7 @@ public class Bullet : MonoBehaviour
     // Happens on collision
     void OnCollisionEnter(Collision Other)
     {
-        Destroy(gameObject)
+        Destroy(gameObject);
     }
 }
+
