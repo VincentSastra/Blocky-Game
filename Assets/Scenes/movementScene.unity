@@ -665,6 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 381804186}
   - component: {fileID: 381804187}
+  - component: {fileID: 381804188}
   m_Layer: 0
   m_Name: Blaster
   m_TagString: Untagged
@@ -682,7 +683,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.87271106, w: 0.48823702}
   m_LocalPosition: {x: 2.1, y: -2.4, z: 0}
   m_LocalScale: {x: 0.49999994, y: 0.49999994, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 408027316}
   m_Father: {fileID: 2003565291}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 121.55}
@@ -737,6 +739,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &381804188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381804185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f0a10927f167948b1692f5547b8996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPoint: {fileID: 408027316}
+  bulletPrefab: {fileID: 5343974576807668707, guid: 07f6fc33e884df24a968f034974c06e9, type: 3}
+  velocity: 20
+--- !u!1 &408027315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408027316}
+  m_Layer: 0
+  m_Name: ShootingLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408027316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408027315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 381804186}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &433636771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,7 +1427,6 @@ GameObject:
   - component: {fileID: 1538247136}
   - component: {fileID: 1538247135}
   - component: {fileID: 1538247139}
-  - component: {fileID: 1538247140}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1475,21 +1521,6 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 173618883}
---- !u!114 &1538247140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538247134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f0a10927f167948b1692f5547b8996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawnPoint: {fileID: 1538247138}
-  bulletPrefab: {fileID: 5343974576807668707, guid: 07f6fc33e884df24a968f034974c06e9, type: 3}
-  velocity: 20
 --- !u!1 &1602111019
 GameObject:
   m_ObjectHideFlags: 0
