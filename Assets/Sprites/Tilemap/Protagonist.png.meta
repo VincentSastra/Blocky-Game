@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: a7f175d605eb4c04eafba7a2cbecef63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4946363444524217603
+    second: Untitled-Artwork_0
+  - first:
+      213: -463354232461951497
+    second: Untitled-Artwork_1
+  - first:
+      213: -4876309264285415951
+    second: Untitled-Artwork_2
+  - first:
+      213: 5583433091054628036
+    second: Untitled-Artwork_3
+  - first:
+      213: -3660381742496582346
+    second: Untitled-Artwork_4
+  - first:
+      213: 1395498041915963199
+    second: Untitled-Artwork_5
+  - first:
+      213: -6793234743217108465
+    second: Untitled-Artwork_6
+  - first:
+      213: -5183044217642738910
+    second: Untitled-Artwork_7
+  - first:
+      213: 6506979834073030348
+    second: Untitled-Artwork_8
+  - first:
+      213: -8333109193564034477
+    second: Untitled-Artwork_9
+  - first:
+      213: 4866148017791669085
+    second: Untitled-Artwork_0
+  - first:
+      213: -3966835820587113516
+    second: Untitled-Artwork_1
+  - first:
+      213: -6975827981183626299
+    second: Untitled-Artwork_2
+  - first:
+      213: 4145091028639843757
+    second: Untitled-Artwork_3
+  - first:
+      213: 4535358639768256628
+    second: Untitled-Artwork_4
+  - first:
+      213: -4707662850744589214
+    second: Untitled-Artwork_5
+  - first:
+      213: -4380494521951243042
+    second: Protagonist_0
+  - first:
+      213: 3465863978126101653
+    second: Protagonist_1
+  - first:
+      213: 4599071993058699843
+    second: Protagonist_2
+  - first:
+      213: 2052568051082853070
+    second: Protagonist_3
+  - first:
+      213: -8018297686731496865
+    second: Protagonist_4
+  - first:
+      213: -8753855339026432939
+    second: Protagonist_5
+  - first:
+      213: 314338927633558359
+    second: Protagonist_6
+  - first:
+      213: -3181866468190870806
+    second: Protagonist_7
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Protagonist_0
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 3788
+        width: 1098
+        height: 840
+      alignment: 9
+      pivot: {x: 0.5, y: 0.016117059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed43d8ee07b5533c0800000000000000
+      internalID: -4380494521951243042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist_1
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 4127
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c4708dce8391030800000000000000
+      internalID: 3465863978126101653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist_2
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 2913
+        width: 336
+        height: 421
+      alignment: 9
+      pivot: {x: 0.85120535, y: 0.85815775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a26ba5c9f23df30800000000000000
+      internalID: 4599071993058699843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist_3
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 2719
+        width: 970
+        height: 795
+      alignment: 9
+      pivot: {x: 0.5, y: 0.038205706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecafb1a74cf2c7c10800000000000000
+      internalID: 2052568051082853070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist_4
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 2958
+        width: 327
+        height: 427
+      alignment: 9
+      pivot: {x: 0.17922461, y: 0.89918476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5268079cb849b090800000000000000
+      internalID: -8018297686731496865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist_5
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 2034
+        width: 204
+        height: 325
+      alignment: 9
+      pivot: {x: 0.6606822, y: 0.8832647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c3c26f2fe048680800000000000000
+      internalID: -8753855339026432939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonist_6
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 2091
+        width: 207
+        height: 325
+      alignment: 9
+      pivot: {x: 0.278305, y: 0.8832647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75beca8d691cc5400800000000000000
+      internalID: 314338927633558359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
