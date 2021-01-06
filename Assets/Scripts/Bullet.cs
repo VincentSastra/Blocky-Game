@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
@@ -26,9 +26,10 @@ public class Bullet : MonoBehaviour
     }
 
     // Happens on collision
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D col)
     {
         Destroy(gameObject);
+        Debug.Log(col);
     }
 }
 

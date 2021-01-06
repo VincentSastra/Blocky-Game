@@ -11,8 +11,8 @@ public class Shooting : MonoBehaviour
     // void OnMouseDown() {
     //    Shoot();
     //}
-       void Update()
-    {
+    void Update()
+    {   
          //Shooting
         if(Input.GetMouseButtonDown(0))
         {
@@ -25,5 +25,6 @@ public class Shooting : MonoBehaviour
         Bullet bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = (new Vector2((2 * Input.mousePosition.x - Screen.width), (2 * Input.mousePosition.y - Screen.height))).normalized * velocity;
+        bullet.gameObject.layer = bulletSpawnPoint.gameObject.layer;
     }
 }
