@@ -47,6 +47,7 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time - lastDash > 0.5) {
             lastDash = Time.time;
             rb.velocity += getDirection().normalized * dash;
+            anim.SetTrigger("Roll");
         }
     }
 
